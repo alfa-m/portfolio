@@ -54,6 +54,11 @@ a {
   padding: 1rem;
 }
 
+.button:hover {
+  color: var(--not-white);
+  background-color: var(--alfa-main-color);
+}
+
 .about {
   background-color: var(--alfa-main-color);
   color: var(--not-white);
