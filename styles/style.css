@@ -1,3 +1,7 @@
+:root {
+  --alfa-main-color: purple;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -19,9 +23,17 @@ h1 {
 }
 
 span {
-  color: purple;
+  color: var(--alfa-main-color);
 }
 
 a {
   text-underline-offset: 4px;
+}
+
+.button {
+  color: var(--alfa-main-color);
+  font-weight: bold;
+  border: 2px solid var(--alfa-main-color);
+  text-decoration: none;
+  padding: 1rem;
 }
