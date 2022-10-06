@@ -1,5 +1,7 @@
 :root {
-  --alfa-main-color: purple;
+  --alfa-main-color: #750694;
+  --spacing: 4rem;
+  --not-white: whitesmoke;
 }
 
 header {
@@ -9,6 +11,7 @@ header {
   flex-direction: column;
   padding: 2rem;
   height: 100vh;
+  background-color: var(--not-white);
 }
 
 body {
@@ -20,6 +23,19 @@ h1 {
   line-height: 1.4em;
   /* base font size: 16px */
   margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+  font-size: 3vw;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing);
+}
+
+p {
+  /* 0.4 bigger then 100%  */
+  line-height: 1.4em;
+  margin-bottom: 1em;
 }
 
 span {
@@ -36,4 +52,31 @@ a {
   border: 2px solid var(--alfa-main-color);
   text-decoration: none;
   padding: 1rem;
+}
+
+.about {
+  background-color: var(--alfa-main-color);
+  color: var(--not-white);
+  padding: var(--spacing);
+}
+
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .about-container {
+    display: flex;
+  }
+  .about-text {
+    margin-left: var(--spacing);
+  }
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto var(--spacing);
 }
