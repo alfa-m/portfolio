@@ -1,17 +1,17 @@
 :root {
   --alfa-main-color: #750694;
   --spacing: 4rem;
-  --not-white: whitesmoke;
+  --not-white: #fefefe;
 }
 
 header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 2rem;
   height: 100vh;
-  background-color: var(--not-white);
+  padding: 2rem;
+  /* background-color: var(--not-white);*/
 }
 
 body {
@@ -21,7 +21,6 @@ body {
 h1 {
   font-size: 5vw;
   line-height: 1.4em;
-  /* base font size: 16px */
   margin-bottom: 2rem;
 }
 
@@ -47,11 +46,11 @@ a {
 }
 
 .button {
-  color: var(--alfa-main-color);
-  font-weight: bold;
-  border: 2px solid var(--alfa-main-color);
-  text-decoration: none;
   padding: 1rem;
+  border: 2px solid var(--alfa-main-color);
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--alfa-main-color);
 }
 
 .button:hover {
