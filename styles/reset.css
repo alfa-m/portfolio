@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+span {
+  color: purple;
+}
+
+a {
+  text-underline-offset: 4px;
+}
