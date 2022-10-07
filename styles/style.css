@@ -46,7 +46,7 @@ h3 {
 }
 
 p {
-  font-size: larger;
+  font-size: large;
   line-height: 1.4em;
   margin-bottom: 1em;
 }
@@ -127,11 +127,6 @@ a {
 .about {
   position: relative;
   margin-bottom: 100px;
-  /*
-  padding: var(--spacing);
-  background-color: var(--alfa-main-color);
-  color: var(--not-white);
-  */
 }
 
 .about::after {
