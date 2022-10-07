@@ -1,7 +1,7 @@
 :root {
   --alfa-main-color: #750694;
   --not-white: #fefefe;
-  --dk-grey: #080808;
+  --not-black: #080808;
   --max-width: 960px;
   --spacing: 4rem;
   --img-width: 350px;
@@ -28,7 +28,7 @@ h1 {
   font-size: clamp(3rem, 5vw, 200rem);
   font-weight: bold;
   line-height: 1.4em;
-  color: var(--dk-grey);
+  color: var(--not-black);
 }
 
 h2 {
