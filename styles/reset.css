@@ -7,11 +7,11 @@ body {
   padding: 0;
 }
 
-ul {
-  padding: 0;
-}
-
 ol,
 ul {
   list-style: none;
+}
+
+ul {
+  padding: 0;
 }
