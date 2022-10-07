@@ -237,6 +237,7 @@ a {
     object-fit: cover;
   }
 }
+
 .contact {
   position: relative;
   margin-top: 100px;
@@ -255,6 +256,10 @@ a {
   border-left: 100vw solid transparent;
 }
 */
+
+.contact-title {
+  margin-bottom: 3rem;
+}
 
 .social {
   display: flex;
