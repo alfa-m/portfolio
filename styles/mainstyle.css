@@ -61,7 +61,7 @@ article {
 
 blockquote {
   margin-top: var(--spacing);
-  font-size: 2rem;
+  font-size: large;
   font-style: italic;
   text-align: center;
 }
