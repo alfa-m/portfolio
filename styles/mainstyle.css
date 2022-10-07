@@ -154,11 +154,6 @@ a {
   width: 100%;
   max-width: 350px;
   margin: 0 auto var(--spacing);
-  filter: grayscale(100%);
-}
-
-.about-img:hover {
-  filter: grayscale(0);
 }
 
 .header {
