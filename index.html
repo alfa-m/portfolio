@@ -26,23 +26,37 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
   <link rel="manifest" href="/site.webmanifest" />
   <body>
-    <header>
+    <header class="neutral-theme">
       <h1>
         Hello, my name is <span>Alfa Marine</span>.
         <br />
         Welcome to my portfolio!
       </h1>
-      <a class="button" href="#about">Find out more</a>
+      <!-- MUST CORRECT THIS -->
+      <details class="header-button">
+        <summary>Find out more</summary>
+        <ul>
+          <li class="header-button-item">
+            <a class="header-button-text" href="#about">About me</a>
+          </li>
+          <li class="header-button-item">
+            <a class="header-button-text" href="#projects">Projects</a>
+          </li>
+          <li class="header-button-item">
+            <a class="header-button-text" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </details>
     </header>
 
     <main>
-      <section class="about" id="about">
+      <section class="about primary-theme" id="about">
         <h2>About me</h2>
         <div class="about-container">
           <img
+            class="about-img"
             src="./images/power-rangers-alpha-five.webp"
             alt="Power Rangers Alpha 5, the red robot with a yellow lightning symbol on the chest"
-            class="about-img"
           />
         </div>
         <div class="about-text">
@@ -56,7 +70,9 @@
           <p>
             I'm also interested in artificial intelligence and data analysis.
           </p>
-          <a href="http://www.linkedin.com/in/alfa-marine">My resume</a>
+          <a class="button" href="http://www.linkedin.com/in/alfa-marine">
+            My resume
+          </a>
         </div>
         <blockquote>
           "The day you stop learning is the day you begin decaying"
@@ -64,40 +80,54 @@
         </blockquote>
       </section>
 
-      <section class="projects">
+      <section class="projects neutral-theme" id="projects">
         <h2>Projects</h2>
         <article>
-          <h3>Artificial Intelligence Repository</h3>
-          <p>
-            Repository of artificial intelligence algorithms, mostly focused on
-            bio-inspired techniques.
-          </p>
-          <a href="https://github.com/alfa-m/artificial-intelligence">
-            See it on Github
-          </a>
-          <a href="https://github.com/alfa-m/artificial-intelligence/fork">
-            Direct fork
-          </a>
+          <div class="article-text">
+            <h3>Artificial Intelligence Repository</h3>
+            <p>
+              Repository of artificial intelligence algorithms, mostly focused
+              on bio-inspired techniques.
+            </p>
+            <a
+              class="button"
+              href="https://github.com/alfa-m/artificial-intelligence"
+            >
+              See it on Github
+            </a>
+            <a
+              class="button"
+              href="https://github.com/alfa-m/artificial-intelligence/fork"
+            >
+              Direct fork
+            </a>
+          </div>
           <img
+            class="article-img"
             src="./images/electronic-circuit-brain-with-the-initials-AI-inside-of-it.webp"
             alt="Electronic circuit brain with the initials AI inside of it, representing the artificial intelligence"
             width="150"
           />
         </article>
         <article>
-          <h3>Terrarium Repository</h3>
-          <p>Repository of the terrarium project, proposed by Jen Looper.</p>
-          <a
-            href="https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/3-terrarium"
-          >
-            See her original work
-          </a>
-          <a
-            href="https://github.com/alfa-m/school-curriculum-frontend-foxes/tree/main/3-terrarium"
-          >
-            See my fork
-          </a>
+          <div class="article-text">
+            <h3>Terrarium Repository</h3>
+            <p>Repository of the terrarium project, proposed by Jen Looper.</p>
+            <a
+              class="button"
+              href="https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/3-terrarium"
+            >
+              See her original work
+            </a>
+            <a
+              class="button"
+              href="https://github.com/alfa-m/school-curriculum-frontend-foxes/tree/main/3-terrarium"
+            >
+              See my fork
+            </a>
+          </div>
           <img
+            class="article-img"
             src="./images/terrarium-jar.webp"
             alt="Terrarium glass jar with some plants, soil, stones and plastic horses"
             width="150"
@@ -105,27 +135,31 @@
         </article>
       </section>
 
-      <section class="contact">
+      <section class="contact primary-theme" id="contact">
         <h2>Contact</h2>
         <p>If you'd like to talk to me, send me a message</p>
-        <a href="mailto:engalfamarine@gmail.com">E-mail me</a>
+        <a class="button" href="mailto:engalfamarine@gmail.com">E-mail me</a>
       </section>
     </main>
 
     <footer>
-      <ul>
-        <li>
-          <a href="https://github.com/alfa-m">
-            <img src="./images/icon-github.webp" alt="GitHub icon" width="30" />
+      <ul class="social">
+        <li class="social-item">
+          <a
+            class="social-link github"
+            href="https://github.com/alfa-m"
+            alt="GitHub icon"
+          >
+            GitHub
           </a>
         </li>
-        <li>
-          <a href="http://www.linkedin.com/in/alfa-marine">
-            <img
-              src="./images/icon-linkedin.webp"
-              alt="LinkedIn icon"
-              width="30"
-            />
+        <li class="social-item">
+          <a
+            class="social-link linkedin"
+            href="http://www.linkedin.com/in/alfa-marine"
+            alt="LinkedIn icon"
+          >
+            LinkedIn
           </a>
         </li>
       </ul>
