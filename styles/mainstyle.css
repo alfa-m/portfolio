@@ -123,39 +123,6 @@ a {
 }
 
 /*      CLASS ELEMENTS     */
-.about {
-  position: relative;
-  margin-bottom: 100px;
-  /*
-  padding: var(--spacing);
-  background-color: var(--alfa-main-color);
-  color: var(--not-white);
-  */
-}
-
-.about::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -100px;
-  width: 0;
-  height: 0;
-  border-top: 100px solid var(--alfa-main-color);
-  border-right: 100vw solid transparent;
-}
-
-.about-container {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-.about-img {
-  display: block;
-  width: 100%;
-  max-width: 350px;
-  margin: 0 auto var(--spacing);
-}
-
 .header {
   display: flex;
   align-items: center;
@@ -210,12 +177,48 @@ a {
   text-decoration: none;
 }
 
+.about {
+  position: relative;
+  margin-bottom: 100px;
+  /*
+  padding: var(--spacing);
+  background-color: var(--alfa-main-color);
+  color: var(--not-white);
+  */
+}
+
+/*
+.about::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  width: 0;
+  height: 0;
+  border-top: 100px solid var(--alfa-main-color);
+  border-right: 100vw solid transparent;
+}
+*/
+
+.about-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-img {
+  display: block;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto var(--spacing);
+}
+
 .contact {
   position: relative;
   margin-top: 100px;
   text-align: center;
 }
 
+/*
 .contact::before {
   content: "";
   position: absolute;
@@ -226,6 +229,7 @@ a {
   border-bottom: 100px solid var(--alfa-main-color);
   border-left: 100vw solid transparent;
 }
+*/
 
 .social {
   display: flex;
