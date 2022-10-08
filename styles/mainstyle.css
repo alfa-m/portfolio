@@ -90,6 +90,28 @@ a {
   text-underline-position: below;
 }
 
+/* SLICE OF CODE THAT COULD BE USEFUL FOR THE LINK COLOR PROBLEM
+/* unvisited link
+a:link {
+  color: tomato;
+}
+
+/* visited link
+a:visited {
+  color: turquoise;
+}
+
+/* mouse over link
+a:hover {
+  color: hotpink;
+}
+
+/* selected link
+a:active {
+  color: yellow;
+}
+*/
+
 /*      THEMES     */
 .neutral-theme {
   background-color: var(--not-white);
