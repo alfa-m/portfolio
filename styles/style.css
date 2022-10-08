@@ -70,7 +70,7 @@ blockquote {
 footer {
   padding: var(--spacing);
   text-align: center;
-  background-color: #333;
+  background-color: #14202e;
   color: var(--not-white);
 }
 
