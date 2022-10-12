@@ -1,5 +1,9 @@
 :root {
   --alfa-main-color: #000c66;
+  --alfa-second-color: #0081c6;
+  --alfa-third-color: #abedd8;
+  --alfa-fourth-color: #14202e;
+  --alfa-fifth-color: #46cdcf;
   --not-white: #fefefe;
   --not-black: #080808;
   --max-width: 960px;
@@ -27,7 +31,6 @@ h1 {
   font-size: clamp(3rem, 5vw, 200rem);
   font-weight: bold;
   line-height: 1.4em;
-  color: var(--not-black);
 }
 
 h2 {
@@ -69,7 +72,7 @@ blockquote {
 footer {
   padding: var(--spacing);
   text-align: center;
-  background-color: #14202e;
+  background-color: var(--alfa-fourth-color);
   color: var(--not-white);
 }
 
@@ -82,48 +85,41 @@ cite {
 }
 
 span {
-  color: var(--alfa-main-color);
+  color: var(--span-color);
 }
 
 a {
-  color: var(--not-white);
   text-underline-position: below;
+  font-weight: bold;
 }
 
-/* SLICE OF CODE THAT COULD BE USEFUL FOR THE LINK COLOR PROBLEM
-/* unvisited link
 a:link {
-  color: tomato;
+  color: var(--a-link-color);
 }
 
-/* visited link
 a:visited {
-  color: turquoise;
+  color: var(--a-link-color);
 }
-
-/* mouse over link
-a:hover {
-  color: hotpink;
-}
-
-/* selected link
-a:active {
-  color: yellow;
-}
-*/
 
 /*      THEMES     */
 .neutral-theme {
+  color: var(--not-black);
   background-color: var(--not-white);
+  --a-link-color: var(--alfa-main-color);
+  --a-visited-color: var(--alfa-second-color);
   --button-color: var(--alfa-main-color);
   --button-hover-color: var(--not-white);
+  --span-color: var(--alfa-main-color);
 }
 
 .primary-theme {
   color: var(--not-white);
   background-color: var(--alfa-main-color);
+  --a-link-color: var(--not-white);
+  --a-visited-color: var(--alfa-third-color);
   --button-color: var(--not-white);
   --button-hover-color: var(--alfa-main-color);
+  --span-color: var(--not-white);
 }
 
 /*      AUXILIAR ELEMENTS     */
@@ -150,7 +146,7 @@ a:active {
   align-items: center;
   justify-content: space-between;
 }
-
+/* 
 .header::after {
   content: "";
   width: 0;
@@ -164,7 +160,7 @@ a:active {
 .header:hover::after {
   border-top-color: var(--not-white);
   transition: all 0.3s ease-in-out;
-}
+} */
 
 .header-button {
   display: inline-block;
@@ -201,12 +197,7 @@ a:active {
 
 .about {
   position: relative;
-  margin-bottom: 100px;
-  /*
-  padding: var(--spacing);
-  background-color: var(--alfa-main-color);
-  color: var(--not-white);
-  */
+  /* margin-bottom: 100px; */
 }
 
 /*
@@ -241,6 +232,7 @@ a:active {
 @media (min-width: 800px) {
   .about-container {
     display: flex;
+    flex-flow: row nowrap;
   }
 
   .about-text {
