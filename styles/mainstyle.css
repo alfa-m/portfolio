@@ -89,8 +89,8 @@ span {
 }
 
 a {
-  text-underline-position: below;
   font-weight: bold;
+  text-decoration: none;
 }
 
 a:link {
@@ -99,6 +99,10 @@ a:link {
 
 a:visited {
   color: var(--a-link-color);
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /*      THEMES     */
@@ -129,7 +133,6 @@ a:visited {
   width: max-content;
   padding: 1rem;
   border: 2px solid var(--button-color);
-  font-weight: bold;
   text-decoration: none;
   color: var(--button-color);
 }
@@ -138,6 +141,7 @@ a:visited {
   color: var(--button-hover-color);
   background-color: var(--button-color);
   transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
 /*      CLASS ELEMENTS     */
