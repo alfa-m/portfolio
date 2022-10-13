@@ -231,11 +231,18 @@ a:hover {
 
 .about-img {
   display: block;
-  width: 100%;
+  width: 90%;
   max-width: 350px;
   min-width: 240px;
   min-height: 255.8px;
+  border-radius: 240px;
+  transition: border-radius;
+  transition: width 2s;
+}
+
+.about-img:hover {
   border-radius: 20px;
+  width: 100%;
 }
 
 .article-img {
