@@ -49,7 +49,7 @@ h3 {
 }
 
 p {
-  /margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 
 section {
@@ -175,16 +175,15 @@ summary {
   color: var(--button-color);
 }
 
-.summary-items {
+.summary-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin: 0%;
-  padding: 10px 0 0;
+  margin: 10px 0 0;
 }
 
-.summary-link {
+.summary-items {
   width: max-content;
   margin: 3px 0;
 }
