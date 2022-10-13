@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
 
@@ -39,17 +39,17 @@
         Welcome to my portfolio!
       </h1>
 
-      <details class="header-button">
+      <details class="neutral-theme" id="dropdown">
         <summary>Find out more</summary>
-        <ul>
-          <li class="header-button-item">
-            <a class="header-button-text" href="#about">About me</a>
+        <ul class="summary-list">
+          <li class="summary-items">
+            <a id="summary-link-about" href="#about">About me</a>
           </li>
-          <li class="header-button-item">
-            <a class="header-button-text" href="#projects">Projects</a>
+          <li class="summary-items">
+            <a id="summary-link-project" href="#projects">Projects</a>
           </li>
-          <li class="header-button-item">
-            <a class="header-button-text" href="#contact">Contact</a>
+          <li class="summary-items">
+            <a id="summary-link-contact" href="#contact">Contact</a>
           </li>
         </ul>
       </details>
@@ -68,18 +68,26 @@
             <p>Hi, my name is Alfa Marine.</p>
             <p>
               I'm a undergraduate electrical engineering student at Federal
-              University of Pará (UFPA) and I'm currently learning the basics of
-              front-end web development with the
-              <a href="https://www.vuevixens.org/">Front-End Foxes School</a>.
+              University of <span lang="pt-br">Pará</span> (UFPA) and I'm
+              currently learning the basics of front-end web development with
+              the
+              <a href="https://www.vuevixens.org/" target="_blank"
+                >Front-End Foxes School</a
+              >.
             </p>
             <p>
               I'm also interested in artificial intelligence and data analysis.
             </p>
-            <a class="button" href="http://www.linkedin.com/in/alfa-marine">
-              My resume
-            </a>
           </div>
         </div>
+        <a
+          class="button"
+          id="resume"
+          href="http://www.linkedin.com/in/alfa-marine"
+          target="_blank"
+        >
+          My resume
+        </a>
         <blockquote>
           "The day you stop learning is the day you begin decaying"
           <cite>- Isaac Asimov</cite>
@@ -98,12 +106,14 @@
             <a
               class="button"
               href="https://github.com/alfa-m/artificial-intelligence"
+              target="_blank"
             >
               See it on Github
             </a>
             <a
               class="button"
               href="https://github.com/alfa-m/artificial-intelligence/fork"
+              target="_blank"
             >
               Direct fork
             </a>
@@ -123,18 +133,21 @@
               original work can be see
               <a
                 href="https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/3-terrarium"
+                target="_blank"
                 >here</a
               >.
             </p>
             <a
               class="button"
-              href="https://alfa-m.github.io/terrarium/"
+              href="https://github.com/alfa-m/terrarium"
+              target="_blank"
             >
               See it on Github
             </a>
             <a
               class="button"
-              href="https://github.com/alfa-m/terrarium/tree/with-js/fork"
+              href="https://github.com/alfa-m/terrarium/fork"
+              target="_blank"
             >
               Direct fork
             </a>
@@ -164,6 +177,7 @@
             class="social-link github"
             href="https://github.com/alfa-m"
             alt="GitHub icon"
+            target="_blank"
           >
             GitHub
           </a>
@@ -173,12 +187,16 @@
             class="social-link linkedin"
             href="http://www.linkedin.com/in/alfa-marine"
             alt="LinkedIn icon"
+            target="_blank"
           >
             LinkedIn
           </a>
         </li>
       </ul>
-      <p>&copy; 2022 - Design by Alfa Marine</p>
+      <p>&copy; 2022 - Design by Alfa Marine.</p>
     </footer>
+
+    <!-- Import script -->
+    <script src="script.js"></script>
   </body>
 </html>
