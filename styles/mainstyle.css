@@ -145,10 +145,6 @@ a:hover {
   text-decoration: none;
 }
 
-#resume {
-  margin: 2% 0 0 0;
-}
-
 /*      CLASS ELEMENTS     */
 .header {
   display: flex;
@@ -214,6 +210,11 @@ summary {
   transition: border-radius 2s;
 }
 
+.about-text {
+  margin: 3%;
+  padding: 3% 0;
+}
+
 .about-img:hover {
   border-radius: 20px;
 }
@@ -230,8 +231,7 @@ summary {
   }
 
   .about-text {
-    margin: 3%;
-    padding: 3% 0;
+    margin: 0 3%;
   }
 
   article {
