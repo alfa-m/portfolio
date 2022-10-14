@@ -298,3 +298,23 @@ summary {
 .github {
   background-image: url(../images/icon-github.webp);
 }
+
+#to-top-button {
+  position: fixed;
+  width: fit-content;
+  padding: 0.2% 1.2% 0.2%;
+  bottom: 0%;
+  right: 1%;
+  background-color: #868686;
+  color: var(--not-white);
+  text-decoration: none;
+  border: 5rem #868686;
+  border-radius: 0.2rem 0.2rem 0 0;
+  font-size: 0.9rem;
+  filter: drop-shadow(0 2px 2px (var(--not-black) 20%));
+  visibility: hidden;
+}
+
+#to-top-button:hover {
+  text-decoration: none;
+}
