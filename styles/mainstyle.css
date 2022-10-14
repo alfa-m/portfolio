@@ -284,10 +284,22 @@ summary {
   transition: transform 0.3s ease-in-out;
 }
 
-.linkedin {
-  background-image: url(../images/icon-linkedin.webp);
+.twitter {
+  background-image: url(../images/icon-twitter.webp);
 }
 
 .github {
   background-image: url(../images/icon-github.webp);
+}
+
+.linkedin {
+  background-image: url(../images/icon-linkedin.webp);
+}
+
+.instagram {
+  background-image: url(../images/icon-instagram.webp);
+}
+
+.youtube {
+  background-image: url(../images/icon-youtube.webp);
 }
