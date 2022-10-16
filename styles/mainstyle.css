@@ -62,6 +62,7 @@ article {
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
+  width: 90vw;
   padding: 3%;
   margin: 0 0 2% 0;
 }
@@ -227,7 +228,7 @@ summary {
 
 .article-text {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   width: 100%;
 }
@@ -252,11 +253,11 @@ summary {
 
   article {
     flex-direction: row;
+    width: 100%;
   }
 
   .article-text {
     justify-content: flex-start;
-    width: 100%;
   }
   .article-img {
     min-width: 200px;
