@@ -59,6 +59,11 @@ section {
 article {
   display: flex;
   flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  padding: 3%;
+  margin: 0 0 2% 0;
 }
 
 blockquote {
@@ -146,11 +151,6 @@ a:hover {
 }
 
 /*      CLASS ELEMENTS     */
-.header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
 
 details {
   display: flex;
@@ -190,7 +190,6 @@ summary {
   height: 100%;
   align-items: center;
   position: relative;
-  /* margin-bottom: 100px; */
 }
 
 .about-container {
@@ -226,8 +225,18 @@ summary {
   align-items: center;
 }
 
+.article-text {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+}
+
 .article-img {
-  margin-bottom: 2rem;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 @media (min-width: 800px) {
@@ -243,14 +252,19 @@ summary {
 
   article {
     flex-direction: row;
-    max-width: 960px;
-    margin: 0 auto var(--spacing);
   }
 
+  .article-text {
+    justify-content: flex-start;
+    width: 100%;
+  }
   .article-img {
-    margin-left: 2rem;
-    max-width: 350px;
+    min-width: 200px;
+    min-height: 200px;
     object-fit: cover;
+    width: 15vw;
+    height: 15vw;
+    margin: 0 0 0 2rem;
   }
 }
 
@@ -266,7 +280,8 @@ summary {
 
 .social {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin-bottom: var(--spacing);
 }
 
@@ -274,7 +289,6 @@ summary {
   background-color: var(--not-white);
   border-radius: 50%;
   padding: 10px;
-  margin: 0 2rem;
 }
 
 .social-link {
