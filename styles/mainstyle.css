@@ -323,7 +323,7 @@ footer {
   bottom: 0;
   right: 2%;
   background-color: #868686;
-  color: var(--not-white);
+  color: var(--not-black);
   text-decoration: none;
   border: 5rem #868686;
   border-radius: 0.2rem 0.2rem 0 0;
