@@ -15,7 +15,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
   width: 100%;
   height: 100%;
   min-width: 100vw;
@@ -147,10 +146,12 @@ a:hover {
 }
 
 .about-img {
-  width: 50%;
-  height: 50%;
-  max-width: 60%;
-  max-height: 60%;
+  width: 40%;
+  height: 40%;
+  max-width: 50%;
+  max-height: 50%;
+  min-width: 30%;
+  min-height: 30%;
   object-fit: cover;
   margin: 0 var(--spacing) 0 0;
   border-radius: 50%;
@@ -162,8 +163,14 @@ a:hover {
 }
 
 .about-text {
-  min-height: 60%;
+  min-height: 30%;
   margin: var(--spacing);
+}
+
+blockquote,
+cite,
+#resume {
+  margin-top: var(--spacing);
 }
 
 .button {
@@ -192,7 +199,6 @@ blockquote {
 
 cite {
   display: block;
-  margin-top: 2%;
   font-style: normal;
 }
 
@@ -204,7 +210,6 @@ cite {
   justify-content: space-evenly;
   min-width: 90vw;
   min-height: 100vh;
-  /* height: 100%; */
   padding: var(--spacing);
 }
 
@@ -355,6 +360,7 @@ footer {
     margin: var(--spacing);
   }
 
+  blockquote,
   cite {
     margin-top: 5%;
   }
