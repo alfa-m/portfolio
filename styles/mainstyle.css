@@ -22,27 +22,27 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 4rem;
   text-align: center;
   font-weight: bold;
   margin: 2% 0;
 }
 
 h2 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   text-align: center;
   font-weight: bold;
   margin: 2% 0;
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: var(--spacing) 0;
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 2rem;
 }
 
 /*      THEMES     */
@@ -84,9 +84,9 @@ span {
 
 details {
   display: flex;
-  padding: 1%;
+  padding: var(--spacing);
   border: 2px solid var(--alfa-main-color);
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 details:hover {
@@ -181,7 +181,7 @@ cite,
   text-decoration: none;
   color: var(--button-color);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 
 .button:hover {
@@ -192,7 +192,7 @@ cite,
 }
 
 blockquote {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-style: italic;
   text-align: center;
 }
@@ -263,7 +263,7 @@ footer {
   color: var(--not-white);
   padding: var(--spacing);
   text-align: center;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .social {
@@ -315,6 +315,10 @@ footer {
   background-image: url(../images/icon-youtube.webp);
 }
 
+#copyright {
+  font-size: 1.2rem;
+}
+
 #to-top-button {
   align-self: flex-end;
   position: fixed;
@@ -327,7 +331,7 @@ footer {
   text-decoration: none;
   border: 5rem #868686;
   border-radius: 0.2rem 0.2rem 0 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
   filter: drop-shadow(0 2px 2px (var(--not-black) 20%));
   visibility: hidden;
 }
