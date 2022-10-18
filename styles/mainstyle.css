@@ -99,6 +99,10 @@ summary {
   font-weight: bold;
 }
 
+summary:hover {
+  cursor: pointer;
+}
+
 .summary-list {
   display: flex;
   flex-direction: column;
