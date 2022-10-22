@@ -470,7 +470,7 @@ footer {
   background-color: var(--theme-color);
 }
 
-@media (max-width: 800px) {
+@media (max-width: 700px) {
   h2 {
     margin: 5% 0;
   }
