@@ -74,19 +74,6 @@ p {
   --theme-color: var(--alfa-second-color);
 }
 
-/* .dark-theme {
-  --color: var(--not-white);
-  --background-color: var(--not-black);
-  color: var(--color);
-  background-color: var(--background-color);
-  --a-link-color: var(--alfa-fifth-color);
-  --a-visited-color: var(--alfa-second-color);
-  --button-color: var(--alfa-fifth-color);
-  --button-hover-color: var(--not-black);
-  --span-color: var(--alfa-fifth-color);
-  --theme-color: var(--alfa-fifth-color);
-} */
-
 .primary-theme {
   --color: var(--not-white);
   --background-color: var(--alfa-main-color);
@@ -98,30 +85,6 @@ p {
   --button-hover-color: var(--alfa-main-color);
   --span-color: var(--not-white);
 }
-
-.secondary-theme {
-  --color: var(--not-white);
-  --background-color: var(--alfa-dark-color);
-  color: var(--color);
-  background-color: var(--background-color);
-  --a-link-color: var(--not-white);
-  --a-visited-color: var(--alfa-third-color);
-  --button-color: var(--not-white);
-  --button-hover-color: var(--alfa-dark-color);
-  --span-color: var(--not-white);
-}
-
-/* .secondary-theme {
-  --color: var(--not-white);
-  --background-color: var(--alfa-dark-color);
-  color: var(--color);
-  background-color: var(--background-color);
-  --a-link-color: var(--not-white);
-  --a-visited-color: var(--alfa-third-color);
-  --button-color: var(--not-white);
-  --button-hover-color: var(--alfa-dark-color);
-  --span-color: var(--not-white);
-} */
 
 /* HEADER ELEMENTS */
 header {

@@ -7,7 +7,6 @@ let navHeader = document.getElementById("nav-header-item");
 let thmButtonNav = document.getElementById("nav-bar-item-theme");
 let thmButtonHeader = document.getElementById("nav-header-item-theme");
 let neutral = document.getElementsByClassName("neutral-theme");
-// let primal = document.getElementsByClassName("primary-theme");
 
 let sunSource = "./images/icon-sun.webp";
 let moonSource = "./images/icon-moon.webp";
@@ -57,10 +56,6 @@ function changeThemeHeader() {
       const mainTheme = neutral[g];
       mainTheme.classList.add("dark-theme");
     }
-    // for (let h = 0; h < primal.length; h++) {
-    //   const sideTheme = primal[h];
-    //   sideTheme.classList.add("secondary-theme");
-    // }
   } else {
     thmButtonHeader.className = "sunny";
     thmButtonHeader.src = sunSource;
@@ -71,10 +66,6 @@ function changeThemeHeader() {
       const mainTheme = neutral[g];
       mainTheme.classList.remove("dark-theme");
     }
-    // for (let h = 0; h < primal.length; h++) {
-    //   const sideTheme = primal[h];
-    //   sideTheme.classList.remove("secondary-theme");
-    // }
   }
 }
 
@@ -90,10 +81,6 @@ function changeThemeNav() {
       const mainTheme = neutral[g];
       mainTheme.classList.add("dark-theme");
     }
-    // for (let h = 0; h < primal.length; h++) {
-    //   const sideTheme = primal[h];
-    //   sideTheme.classList.add("secondary-theme");
-    // }
   } else {
     thmButtonNav.className = "sunny";
     thmButtonNav.src = sunSource;
@@ -104,9 +91,5 @@ function changeThemeNav() {
       const mainTheme = neutral[g];
       mainTheme.classList.remove("dark-theme");
     }
-    // for (let h = 0; h < primal.length; h++) {
-    //   const sideTheme = primal[h];
-    //   sideTheme.classList.remove("secondary-theme");
-    // }
   }
 }
