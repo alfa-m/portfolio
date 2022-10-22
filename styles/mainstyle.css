@@ -399,6 +399,12 @@ footer {
   justify-content: center;
 }
 
+#nav-header-item:hover #nav-header-item-theme {
+  transition: 0.3s;
+  height: 9%;
+  width: 9%;
+}
+
 #nav-bar {
   display: flex;
   align-items: center;
@@ -434,6 +440,16 @@ footer {
   align-items: center;
   width: 10%;
   height: 100%;
+}
+
+.nav-bar-item:hover #nav-bar-item-home,
+.nav-bar-item:hover #nav-bar-item-about,
+.nav-bar-item:hover #nav-bar-item-theme-link,
+.nav-bar-item:hover #nav-bar-item-project,
+.nav-bar-item:hover #nav-bar-item-contact {
+  transition: 0.3s;
+  height: 90%;
+  width: 90%;
 }
 
 #nav-bar-item-home,

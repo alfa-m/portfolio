@@ -61,8 +61,8 @@ function changeThemeHeader() {
     thmButtonNav.className = "sunny";
     thmButtonNav.src = sunSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
-    for (let g = 0; g < neutral.length; g++) {
-      const mainTheme = neutral[g];
+    for (let h = 0; h < neutral.length; h++) {
+      const mainTheme = neutral[h];
       mainTheme.classList.remove("dark-theme");
     }
   }
@@ -75,8 +75,8 @@ function changeThemeNav() {
     thmButtonHeader.className = "moony";
     thmButtonHeader.src = moonSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
-    for (let g = 0; g < neutral.length; g++) {
-      const mainTheme = neutral[g];
+    for (let i = 0; i < neutral.length; i++) {
+      const mainTheme = neutral[i];
       mainTheme.classList.add("dark-theme");
     }
   } else {
@@ -85,8 +85,8 @@ function changeThemeNav() {
     thmButtonHeader.className = "sunny";
     thmButtonHeader.src = sunSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
-    for (let g = 0; g < neutral.length; g++) {
-      const mainTheme = neutral[g];
+    for (let j = 0; j < neutral.length; j++) {
+      const mainTheme = neutral[j];
       mainTheme.classList.remove("dark-theme");
     }
   }
