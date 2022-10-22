@@ -45,7 +45,6 @@ function hideButton() {
 }
 
 function changeThemeHeader() {
-  console.log("change theme");
   if (thmButtonHeader.className == "sunny") {
     thmButtonHeader.className = "moony";
     thmButtonHeader.src = moonSource;
@@ -70,7 +69,6 @@ function changeThemeHeader() {
 }
 
 function changeThemeNav() {
-  console.log("change theme");
   if (thmButtonNav.className == "sunny") {
     thmButtonNav.className = "moony";
     thmButtonNav.src = moonSource;

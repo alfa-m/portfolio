@@ -108,7 +108,8 @@ details {
   text-align: center;
 }
 
-details:hover {
+details:hover,
+details:focus {
   transition: all 0.3s ease-in-out;
   border: 6px solid var(--button-color);
 }
@@ -119,7 +120,8 @@ summary {
   padding: var(--spacing);
 }
 
-summary:hover {
+summary:hover,
+summary:focus {
   cursor: pointer;
   color: var(--button-hover-color);
   background-color: var(--button-color);
@@ -139,7 +141,8 @@ summary:hover {
   height: 100%;
 }
 
-.summary-items:hover {
+.summary-items:hover,
+.summary-items:focus {
   color: var(--button-hover-color);
   background-color: var(--button-color);
 }
@@ -154,7 +157,10 @@ summary:hover {
 
 #summary-link-about:hover,
 #summary-link-project:hover,
-#summary-link-contact:hover {
+#summary-link-contact:hover,
+#summary-link-about:focus,
+#summary-link-project:focus,
+#summary-link-contact:focus {
   color: var(--button-hover-color);
   background-color: var(--button-color);
 }
@@ -173,7 +179,8 @@ a:visited {
   color: var(--a-link-color);
 }
 
-a:hover {
+a:hover,
+a:focus {
   text-decoration: 2px underline;
 }
 
@@ -208,7 +215,8 @@ a:hover {
   transition: border-radius 1s;
 }
 
-.about-img:hover {
+.about-img:hover,
+.about-img:focus {
   border-radius: 5%;
 }
 
@@ -237,7 +245,8 @@ blockquote {
   font-size: 1.5rem;
 }
 
-.button:hover {
+.button:hover,
+.button:focus {
   color: var(--button-hover-color);
   background-color: var(--button-color);
   transition: all 0.3s ease-in-out;
@@ -341,7 +350,8 @@ footer {
   background-position: center;
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
   transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
 }
