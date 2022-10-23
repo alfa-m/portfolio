@@ -3,7 +3,7 @@ let lnkAbout = document.getElementById("summary-link-about");
 let lnkProject = document.getElementById("summary-link-project");
 let lnkContact = document.getElementById("summary-link-contact");
 let navBar = document.getElementById("nav-bar");
-let navHeader = document.getElementById("nav-header-item");
+let navHeader = document.getElementById("nav-header");
 let thmButtonNav = document.getElementById("nav-bar-item-theme");
 let thmButtonHeader = document.getElementById("nav-header-item-theme");
 let neutral = document.getElementsByClassName("neutral-theme");
@@ -12,15 +12,14 @@ let sunSource = "./images/icon-sun.webp";
 let moonSource = "./images/icon-moon.webp";
 
 if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  changeThemeNav();
-  changeThemeHeader();
+  changeTheme();
 }
 
 lnkAbout.addEventListener("click", closeMenu);
 lnkProject.addEventListener("click", closeMenu);
 lnkContact.addEventListener("click", closeMenu);
-thmButtonHeader.addEventListener("click", changeThemeHeader);
-thmButtonNav.addEventListener("click", changeThemeNav);
+thmButtonHeader.addEventListener("click", changeTheme);
+thmButtonNav.addEventListener("click", changeTheme);
 document.addEventListener("scroll", hideButton);
 
 function closeMenu() {
@@ -44,50 +43,25 @@ function hideButton() {
   }
 }
 
-function changeThemeHeader() {
+function changeTheme() {
+  let theme = "";
   if (thmButtonHeader.className == "sunny") {
     thmButtonHeader.className = "moony";
     thmButtonHeader.src = moonSource;
     thmButtonNav.className = "moony";
     thmButtonNav.src = moonSource;
-    navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let g = 0; g < neutral.length; g++) {
-      const mainHeaderTheme = neutral[g];
-      mainHeaderTheme.classList.add("dark-theme");
+      theme = neutral[g];
+      theme.classList.add("dark-theme");
     }
   } else {
     thmButtonHeader.className = "sunny";
     thmButtonHeader.src = sunSource;
     thmButtonNav.className = "sunny";
     thmButtonNav.src = sunSource;
-    navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let h = 0; h < neutral.length; h++) {
-      const darkHeaderTheme = neutral[h];
-      darkHeaderTheme.classList.remove("dark-theme");
-    }
-  }
-}
-
-function changeThemeNav() {
-  if (thmButtonNav.className == "sunny") {
-    thmButtonNav.className = "moony";
-    thmButtonNav.src = moonSource;
-    thmButtonHeader.className = "moony";
-    thmButtonHeader.src = moonSource;
-    navBar.style.backgroundColor = "var(--alfa-second-color)";
-    for (let i = 0; i < neutral.length; i++) {
-      const mainNavTheme = neutral[i];
-      mainNavTheme.classList.add("dark-theme");
-    }
-  } else {
-    thmButtonNav.className = "sunny";
-    thmButtonNav.src = sunSource;
-    thmButtonHeader.className = "sunny";
-    thmButtonHeader.src = sunSource;
-    navBar.style.backgroundColor = "var(--alfa-second-color)";
-    for (let j = 0; j < neutral.length; j++) {
-      const darkNavTheme = neutral[j];
-      darkNavTheme.classList.remove("dark-theme");
+      theme = neutral[h];
+      theme.classList.remove("dark-theme");
     }
   }
 }
