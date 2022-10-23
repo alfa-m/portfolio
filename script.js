@@ -52,8 +52,8 @@ function changeThemeHeader() {
     thmButtonNav.src = moonSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let g = 0; g < neutral.length; g++) {
-      const mainTheme = neutral[g];
-      mainTheme.classList.add("dark-theme");
+      const darkTheme = neutral[g];
+      darkTheme.classList.add("dark-theme");
     }
   } else {
     thmButtonHeader.className = "sunny";
@@ -86,8 +86,8 @@ function changeThemeNav() {
     thmButtonHeader.src = sunSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let j = 0; j < neutral.length; j++) {
-      const mainTheme = neutral[j];
-      mainTheme.classList.remove("dark-theme");
+      const darkTheme = neutral[j];
+      darkTheme.classList.remove("dark-theme");
     }
   }
 }
