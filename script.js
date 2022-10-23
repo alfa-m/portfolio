@@ -12,7 +12,6 @@ let sunSource = "./images/icon-sun.webp";
 let moonSource = "./images/icon-moon.webp";
 
 if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-  console.log("trevosa");
   changeTheme();
 }
 
@@ -47,7 +46,6 @@ function hideButton() {
 function changeTheme() {
   let theme = "";
   if (thmButtonHeader.className == "sunny") {
-    console.log("Sunny theme identified. Changing to dark theme");
     thmButtonHeader.className = "moony";
     thmButtonHeader.src = moonSource;
     thmButtonNav.className = "moony";
@@ -57,7 +55,6 @@ function changeTheme() {
       theme.classList.add("dark-theme");
     }
   } else {
-    console.log("Dark theme identified. Changing to sunny theme");
     thmButtonHeader.className = "sunny";
     thmButtonHeader.src = sunSource;
     thmButtonNav.className = "sunny";
