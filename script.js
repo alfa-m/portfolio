@@ -45,6 +45,7 @@ function hideButton() {
 }
 
 function changeThemeHeader() {
+  const theme = "";
   if (thmButtonHeader.className == "sunny") {
     thmButtonHeader.className = "moony";
     thmButtonHeader.src = moonSource;
@@ -52,8 +53,8 @@ function changeThemeHeader() {
     thmButtonNav.src = moonSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let g = 0; g < neutral.length; g++) {
-      const darkTheme = neutral[g];
-      darkTheme.classList.add("dark-theme");
+      theme = neutral[g];
+      theme.classList.add("dark-theme");
     }
   } else {
     thmButtonHeader.className = "sunny";
@@ -62,13 +63,14 @@ function changeThemeHeader() {
     thmButtonNav.src = sunSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let h = 0; h < neutral.length; h++) {
-      const mainTheme = neutral[h];
-      mainTheme.classList.remove("dark-theme");
+      theme = neutral[h];
+      theme.classList.remove("dark-theme");
     }
   }
 }
 
 function changeThemeNav() {
+  const theme = "";
   if (thmButtonNav.className == "sunny") {
     thmButtonNav.className = "moony";
     thmButtonNav.src = moonSource;
@@ -76,8 +78,8 @@ function changeThemeNav() {
     thmButtonHeader.src = moonSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let i = 0; i < neutral.length; i++) {
-      const mainTheme = neutral[i];
-      mainTheme.classList.add("dark-theme");
+      theme = neutral[i];
+      theme.classList.add("dark-theme");
     }
   } else {
     thmButtonNav.className = "sunny";
@@ -86,8 +88,8 @@ function changeThemeNav() {
     thmButtonHeader.src = sunSource;
     navBar.style.backgroundColor = "var(--alfa-second-color)";
     for (let j = 0; j < neutral.length; j++) {
-      const darkTheme = neutral[j];
-      darkTheme.classList.remove("dark-theme");
+      theme = neutral[j];
+      theme.classList.remove("dark-theme");
     }
   }
 }
