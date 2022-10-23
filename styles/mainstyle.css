@@ -45,6 +45,7 @@ h3 {
 
 p {
   font-size: 1.5rem;
+  margin: 3% 0;
 }
 
 /*      THEMES     */
@@ -109,7 +110,7 @@ details {
 }
 
 details:hover,
-details:focus {
+details:focus-visible {
   transition: all 0.3s ease-in-out;
   border: 6px solid var(--button-color);
 }
@@ -121,7 +122,7 @@ summary {
 }
 
 summary:hover,
-summary:focus {
+summary:focus-visible {
   cursor: pointer;
   color: var(--button-hover-color);
   background-color: var(--button-color);
@@ -193,7 +194,7 @@ a:focus {
   justify-content: space-evenly;
   min-width: 90vw;
   min-height: 100vh;
-  padding: 5%;
+  padding: 2% 5% 5%;
 }
 
 .about-container {
@@ -203,12 +204,12 @@ a:focus {
 }
 
 .about-img {
-  width: 40%;
-  height: 40%;
-  max-width: 50%;
-  max-height: 50%;
-  min-width: 200px;
-  min-height: 200px;
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  min-width: 250px;
+  min-height: 250px;
   object-fit: cover;
   margin: 0 var(--spacing) 0 0;
   border-radius: 50%;
@@ -246,7 +247,7 @@ blockquote {
 }
 
 .button:hover,
-.button:focus {
+.button:focus-within {
   color: var(--button-hover-color);
   background-color: var(--button-color);
   transition: all 0.3s ease-in-out;
@@ -272,14 +273,14 @@ cite {
   justify-content: space-evenly;
   width: 100vw;
   min-height: 100vh;
-  padding: 5%;
+  padding: 2% 5% 5%;
 }
 
 .card {
   display: flex;
   width: 100%;
-  justify-content: space-between;
-  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   padding: 2% 0;
 }
 
@@ -292,15 +293,18 @@ article {
   border-radius: 1rem;
   box-shadow: 0 0.1rem 0.3rem var(--a-link-color);
   overflow: visible;
+  min-width: 300px;
   width: 30%;
-  height: 80vh;
+  max-width: 48vw;
+  height: 100vh;
+  margin: 1% 1%;
 }
 
 article:hover {
   box-shadow: 0 0.3rem 0.6rem var(--a-link-color);
 }
 
-article:hover .article-text {
+/* article:hover .article-text {
   height: 50%;
   top: 100%;
   transform: translateY(-100%);
@@ -312,7 +316,7 @@ article:hover .article-text {
 
 article:hover .link-project {
   visibility: visible;
-}
+} */
 
 .article-text {
   display: flex;
@@ -320,16 +324,14 @@ article:hover .link-project {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
-  height: 70%;
-  max-height: 60vw;
-  min-height: 20vw;
-  padding: 5% 2% 0;
+  height: 60%;
+  min-height: 20vh;
+  padding: 5% 3%;
   text-align: center;
 }
 
 .article-img {
-  max-height: 20vw;
-  height: 50%;
+  height: 40%;
   width: 100%;
   border-top-left-radius: 1rem;
   border-top-right-radius: 1rem;
@@ -341,28 +343,26 @@ article:hover .link-project {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
-  width: 20vw;
-  visibility: hidden;
+  height: 30%;
+  width: 90%;
 }
 
 .link-git {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20vw;
-  height: 5vw;
-  max-height: 4vw;
+  width: 90%;
+  height: 48%;
   padding: 0.5rem;
   border: 2px solid var(--button-color);
   text-decoration: none;
   color: var(--button-color);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .link-git:hover,
-.link-git:focus {
+.link-git:focus-within {
   color: var(--button-hover-color);
   background-color: var(--button-color);
   transition: all 0.3s ease-in-out;
@@ -377,7 +377,7 @@ article:hover .link-project {
   justify-content: space-evenly;
   min-width: 90vw;
   min-height: 60vh;
-  padding: 5%;
+  padding: 2% 5% 5%;
   text-align: center;
 }
 
@@ -482,6 +482,7 @@ footer {
   position: fixed;
   width: 100vw;
   height: 10%;
+  max-height: 10vh;
   bottom: 0;
   left: 0;
   margin: 0;
@@ -596,16 +597,14 @@ footer {
   }
 
   article {
-    width: 80%;
-    height: 90vh;
-  }
-
-  .article-text {
-    min-height: 50vh;
+    min-width: 240px;
+    max-width: 600px;
+    width: 90vw;
+    height: 100%;
   }
 
   .article-img {
-    height: 70%;
+    height: 50%;
     max-height: 50vw;
     min-height: 40vh;
   }
@@ -634,6 +633,10 @@ footer {
 
   .social-link {
     background-size: 1.5rem;
+  }
+
+  #nav-header {
+    align-items: flex-start;
   }
 
   #nav-bar {
